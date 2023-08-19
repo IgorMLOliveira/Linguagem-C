@@ -1,2 +1,2 @@
 # Linguagem-C
-Material das aulas de Liguagem C
+Material das aulas de Linguagem C
