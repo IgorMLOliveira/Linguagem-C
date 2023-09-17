@@ -1,0 +1,66 @@
+#include <stdio.h>
+/* 1 – Faça um programa que apresente um menu com opções de comidas e preços. O
+usuário deverá escolher um item. O programa se repete até que o usuário escolha a opção
+para finalizar. No final é apresentado o valor total da conta a ser paga.
+Exemplo de menu
+Opção 1 - Sanduíche natural - R$ 5,00
+Opção 2 - X-salada - R$ 15,00
+Opção 3 - Refrigerante - R$ 3,50
+Opção 4 - Suco - R$ 3,00
+Opção 5 - Sorvete - R$ 9,00
+Opção 6 - Finalizar 
+*/
+int main(void) {
+ float vt;
+int op;
+do{
+  printf(" Boa noite seja bem vindo\n");
+  printf("Escolha o que vai comer e beber: \n");
+  printf("Opção 01 : Sanduiche natural - R$ 5,00\n");
+  printf("Opção 02 : X-Salada - R$ 15,00\n");
+  printf("Opção 03 : Refrigerante -  R$ 3,50\n");
+  printf("Opção 04 : Suco - R$ 3,00\n");
+  printf("Opção 05 : Sorvete - R$ 9,00\n");
+  printf("Opção 06 : Finalizar...\n\n");
+  printf("Escolha suas opções: ");
+  scanf("%d",&op);
+
+  switch(op){
+    case 1:
+      printf("Sanduiche natural\n");
+      vt=5;
+    break;
+    case 2:
+      printf("X-salada\n");
+      vt= vt + 15;
+    break;
+    case 3:
+      printf("Refrigerante\n");
+      vt= vt + 3.5;
+    break;
+    case 4:
+      printf("Suco\n");
+      vt= vt+3;
+    break;
+    case 5:
+      printf("Sorvete\n");
+      vt = vt + 9;
+    break;
+    case 6:
+    printf("Fechando sua conta.Obrigado, Volte Sempre!!!!\n");
+    break;
+
+    default:
+    printf("Valor invalido\n\n");
+    
+  }
+  
+}while(op !=6);
+printf("Sua conta é R$ %.2f",vt);
+
+
+
+
+  
+  return 0;
+}
