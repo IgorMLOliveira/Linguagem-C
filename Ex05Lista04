@@ -1,0 +1,19 @@
+#include <stdio.h>
+/* Escreva um programa que receba um valor n e imprima na tela o mesmo valor n, n
+vezes. Em seguida é pedido outro valor para o usuário e a operação é repetida. O programa
+finaliza se o usuário entrar com um valor maior que 500.*/
+int main(){
+  int i, x, y,z;
+  printf("Escolha um numero: ");
+  scanf("%d",&x);
+  while(x < 500){
+    for(i=0; i < x;i++){
+    printf("%d\n",x);
+  }
+    printf("Escolha outro valor: ");
+    scanf("%d",&x);
+  }
+  
+
+return 0;
+}
