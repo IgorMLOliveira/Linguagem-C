@@ -1,0 +1,17 @@
+#include <stdio.h>
+/*Escreva um programa que recebe um valor x. Em seguida recebe um novo valor.
+Enquanto o segundo valor entrado não for maior que x, ele continua pedindo um novo
+valor, caso contrário, o programa termina */
+int main(void) {
+ int x,n2;
+  printf("escolha o valor de n1: ");
+  scanf("%d",&x);
+  printf("escolha o valor de n2: ");
+  scanf("%d",&n2);
+  while(n2<x){
+    printf("Escolha um novo valor: ");
+    scanf("%d",&n2);
+  }
+  
+  return 0;
+}
