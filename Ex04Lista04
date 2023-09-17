@@ -1,0 +1,17 @@
+#include <stdio.h>
+/* Implemente um programa que forneça quantos números devem existir em sequência
+a partir do 1 (1, 2, 3, 4, ...) para que a sua soma ultrapasse 250. O programa deve utilizar
+apenas a operação while ou do-while. */
+  int main(){
+    int i, j;
+   i = 0;
+   j = 1;
+
+
+  while( i <=250){
+    i+=j;
+    j++;
+  }
+  printf( "Existem %d numeros de 1 a 250 para que a soma ultrapasse 250.", j);
+  return 0;
+}
